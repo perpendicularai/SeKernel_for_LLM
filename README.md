@@ -18,7 +18,7 @@ This is a Python module used to create memory in your chat applications.
   # Set messages parameter equal to data. Depending on your LLM API defintion, messages may be a different parameter, in this case it is messages, as defined in the OpenAI API definition.
   messages = data
   ```
-  See [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) for more.
+  See [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) API reference for more.
   
   ```
   # You may then append any new content and/or messages to the kernel

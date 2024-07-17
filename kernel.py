@@ -1,2 +1,2 @@
-class MyList(list):
+class Kernel(list):
      pass 

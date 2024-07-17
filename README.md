@@ -21,5 +21,10 @@ This is a Python module used to create memory in your chat applications.
   # You may then append any new content and/or messages to the kernel
   data.append(new_message)
   ```
+## 📽️ Short Films
+See an example of using the SeKernel_for_LLM with [LlamaCpp Python bindings](https://github.com/abetlen/llama-cpp-python)
 
-I hope this helps someone starting out. Happy prompting!!!
+https://github.com/user-attachments/assets/cb48e962-2cba-4672-b4e7-c0f77455bb74
+
+
+🍾 I hope this helps someone starting out. Happy prompting!!!

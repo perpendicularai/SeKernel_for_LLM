@@ -1,4 +1,4 @@
-# SeKernel_for_LLM
+# 🃏 SeKernel_for_LLM :octocat:
 This is a Python module used to create memory in your chat applications.
 
 ## ⚙️ How to:

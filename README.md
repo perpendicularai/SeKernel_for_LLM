@@ -20,7 +20,7 @@ This is a Python module used to create memory in your chat applications.
   ```
   See [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) API reference for more.
   
-  ```
+  - ```
   # You may then append any new content and/or messages to the kernel
   data.append(new_message)
   ```

@@ -5,17 +5,17 @@ This is a Python module used to create memory in your chat applications.
 - Clone the repo and import the module into your project. Ensure that it is in the project directory.
 - ```
   import kernel
+  import plugins
 
   # Initialize the kernel
-  data = kernel
+  data = kernel.template(prompt=prompt, plugins=plugins.mathPlugin()) # See plugins.py module for more plugins
 
-  # Create a template
-  data = [
-    {"role": "system", "content": """You are an intelligent assistant. You always provide well-reasoned answers that are both correct and helpful."""},
-    {"role": "user", "content": question},
-  ]
+  # LlamaCpp
+  client = Llama(
+        model_path=kernel.model() # Make sure to add your GGUF model in the kernel module.
+  )
 
-  # Set messages parameter equal to data. Depending on your LLM API defintion, messages may be a different parameter, in this case it is messages, as defined in the OpenAI API definition.
+  # Use the kernel and set messages parameter equal to data. Depending on your LLM API defintion, messages may be a different parameter, in this case it is messages, as defined in the OpenAI API definition.
   messages = data
   ```
   See [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) API reference for more.

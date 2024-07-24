@@ -1,5 +1,5 @@
 # 🃏 SeKernel_for_LLM :octocat:
-This is a Python module used to create memory in your chat applications.
+This is a Python module used to create memory in your openai api compatible chat applications.
 
 ## ⚙️ How to:
 - Clone the repo and import the module into your project. Ensure that it is in the project directory.

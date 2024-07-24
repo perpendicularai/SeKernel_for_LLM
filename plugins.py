@@ -3,6 +3,8 @@ class Plugin(str):
      pass
 
 # Plugins
+
+# Default plugin
 def defaultPlugin():
      system = Plugin(
           """
@@ -12,6 +14,7 @@ def defaultPlugin():
           )
      return system
 
+# Math plugin
 def mathPlugin():
      system = Plugin(
           """

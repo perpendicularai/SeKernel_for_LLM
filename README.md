@@ -11,7 +11,7 @@ This is a Python module used to create a semantic kernel in your openai api comp
   search_prompt = plugins.searchPlugin(plugins.remove_prepositions(question))
 
   # Initialize the kernel
-  data = kernel.template(prompt=prompt, plugins=plugins.mathPlugin(), context=search_prompt) # See plugins.py module for more plugins
+  data = kernel.template(prompt=prompt, plugins=plugins.defaultPlugin(), context=search_prompt) # See plugins.py module for more plugins
 
   # LlamaCpp
   client = Llama(

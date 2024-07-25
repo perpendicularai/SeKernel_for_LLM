@@ -45,7 +45,7 @@ def remove_prepositions(prompt):
     tagged_tokens = nltk.pos_tag(tokens)
     return " ".join(token for token, pos in tagged_tokens if pos not in ['IN', 'TO', 'PRP', 'PRP$', 'VBZ', 'WRB', 'WP', 'DT', 'VB'])
 
-# Function to search Google
+# Function to search Google / Internet-search plugin
 def searchPlugin(output):
     url = "https://google.com/search?q="+output
     # Fetch the URL data using requests.get(url), 

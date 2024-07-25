@@ -5,6 +5,7 @@ import requests
 import nltk
 import os
 
+# Get env user
 username = os.getenv("USERNAME")
 
 # Specify the path to your local NLTK data directory

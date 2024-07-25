@@ -29,7 +29,13 @@ This is a Python module used to create a semantic kernel in your openai api comp
 ## 📽️ Short Films
 See an example of using the SeKernel_for_LLM with 🦙 [LlamaCpp Python bindings](https://github.com/abetlen/llama-cpp-python)
 
+#### The square-root of 2
 https://github.com/user-attachments/assets/cb48e962-2cba-4672-b4e7-c0f77455bb74
+
+#### Internet search with Google
+https://github.com/user-attachments/assets/fdf5ac16-c8b7-4b39-b91b-d4e2d8d2d888
+
+
 
 
 🍾 I hope this helps someone starting out. Happy prompting!!!

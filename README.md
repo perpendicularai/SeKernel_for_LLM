@@ -1,6 +1,10 @@
 # 🃏 SeKernel_for_LLM :octocat:
 This is a Python module used to create a semantic kernel in your openai api compatible chat applications.
 
+### 🍬 Features
+- In-chat memory
+- Internet-search
+
 ## ⚙️ How to:
 - Clone the repo and import the module into your project. Ensure that it is in the project directory.
 - ```

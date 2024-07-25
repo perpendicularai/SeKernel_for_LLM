@@ -6,7 +6,7 @@ class MyList(list):
 class Model(str):
      pass
 
-# Template function that takes a string as input and returns a list
+# Template function that takes a string and two objects as input and returns a list
 def template(prompt:str, plugin, context):
      my_list = MyList
      my_list = [

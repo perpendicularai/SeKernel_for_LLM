@@ -7,11 +7,11 @@ class Model(str):
      pass
 
 # Template function that takes a string as input and returns a list
-def template(prompt:str, plugin):
+def template(prompt:str, plugin, context):
      my_list = MyList
      my_list = [
           {"role": "system", "content": plugin},
-          {"role": "user", "content": prompt},
+          {"role": "user", "content": f'Using this data {context}, respond to this prompt {prompt}'},
           ]
      return my_list
 

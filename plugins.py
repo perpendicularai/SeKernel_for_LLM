@@ -40,7 +40,7 @@ def mathPlugin():
           )
      return system
 
-# Function to remove prepositions from the question
+# Function to remove pos tagged words from the question
 def remove_prepositions(prompt):
     tokens = nltk.word_tokenize(prompt)
     tagged_tokens = nltk.pos_tag(tokens)

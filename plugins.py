@@ -31,7 +31,7 @@ from bs4 import BeautifulSoup
 import requests
 
 def searchPlugin(output):
-    url = "https://google.com/search?q="+output
+    url = "https://google.com/search?q="+remove_prepositions(output)
     # Fetch the URL data using requests.get(url), 
     # store it in a variable, request_result. 
     request_result=requests.get( url ) 

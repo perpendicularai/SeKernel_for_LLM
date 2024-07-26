@@ -23,7 +23,9 @@ This is a Python module used to create a semantic kernel in your openai api comp
   )
 
   # Use the kernel and set messages parameter equal to data. Depending on your LLM API defintion, messages may be a different parameter, in this case it is messages, as defined in the OpenAI API definition.
-  messages = data
+  output = client.create_chat_completions(
+    messages = data
+  )
   ```
   See [OpenAI](https://platform.openai.com/docs/api-reference/chat/create) API reference for more.
 - ```

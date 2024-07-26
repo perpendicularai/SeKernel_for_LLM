@@ -6,7 +6,7 @@ This is a Python module used to create a semantic kernel in your openai api comp
 - Internet-search
 
 ## ⚙️ How to:
-- Clone the repo and import the module into your project. Ensure that it is in the project directory.
+- Clone the repo and import the modules into your project. Ensure that it is in the project directory.
 - ```
   import kernel
   import plugins

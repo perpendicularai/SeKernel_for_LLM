@@ -18,7 +18,7 @@ nltk.data.path.append(str(nltk_data_dir))
 class Plugin(str):
      pass
 
-# Plugins
+## Plugins ##
 
 # Default plugin
 def defaultPlugin():
@@ -52,6 +52,8 @@ def searchPlugin(output):
                          "html.parser")
     data = soup.get_text()
     return data
+
+## Linguistic functions ##
 
 # Function to remove pos tagged words from the question
 def remove_prepositions(prompt):

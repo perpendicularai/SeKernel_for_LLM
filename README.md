@@ -1,4 +1,4 @@
-# 🃏 SeKernel_for_LLM :octocat:
+# 🃏 SeKernel_for_LLM
 This is a Python module used to create a semantic kernel in your openai api compatible chat applications.
 
 ### 🍬 Features
@@ -42,4 +42,4 @@ https://github.com/user-attachments/assets/fdf5ac16-c8b7-4b39-b91b-d4e2d8d2d888
 
 
 
-🍾 I hope this helps someone starting out. Happy prompting!!!
+🍾 I hope this helps someone starting out. :octocat: Happy prompting!!!

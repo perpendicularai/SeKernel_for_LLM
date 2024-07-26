@@ -1,19 +1,3 @@
-# Module imports
-from bs4 import BeautifulSoup
-from pathlib import Path
-import requests
-import nltk
-import os
-
-# Get env user
-username = os.getenv("USERNAME")
-
-# Specify the path to your local NLTK data directory
-nltk_data_dir = Path(f"C:\\Users\\{username}\\data")
-
-# Load NLTK data from the local directory
-nltk.data.path.append(str(nltk_data_dir))
-
 # Plugin class
 class Plugin(str):
      pass
@@ -41,6 +25,11 @@ def mathPlugin():
      return system
 
 # Internet-search plugin
+
+# Module imports
+from bs4 import BeautifulSoup
+import requests
+
 def searchPlugin(output):
     url = "https://google.com/search?q="+output
     # Fetch the URL data using requests.get(url), 
@@ -54,6 +43,20 @@ def searchPlugin(output):
     return data
 
 ## Linguistic functions ##
+
+# Module imports
+from pathlib import Path
+import nltk
+import os
+
+# Get env user
+username = os.getenv("USERNAME")
+
+# Specify the path to your local NLTK data directory
+nltk_data_dir = Path(f"C:\\Users\\{username}\\data")
+
+# Load NLTK data from the local directory
+nltk.data.path.append(str(nltk_data_dir))
 
 # Function to remove pos tagged words from the question
 def remove_prepositions(prompt):

@@ -31,7 +31,7 @@ from bs4 import BeautifulSoup
 import requests
 
 def searchPlugin(output):
-    url = "https://google.com/search?q="+remove_prepositions(output)
+    url = "https://google.com/search?q="+remove_pos_tags(output)
     # Fetch the URL data using requests.get(url), 
     # store it in a variable, request_result. 
     request_result=requests.get( url ) 
@@ -59,7 +59,7 @@ nltk_data_dir = Path(f"C:\\Users\\{username}\\data")
 nltk.data.path.append(str(nltk_data_dir))
 
 # Function to remove pos tagged words from the question
-def remove_prepositions(prompt):
+def remove_pos_tags(prompt):
     tokens = nltk.word_tokenize(prompt)
     tagged_tokens = nltk.pos_tag(tokens)
     return " ".join(token for token, pos in tagged_tokens if pos not in ['IN', 'TO', 'PRP', 'PRP$', 'VBZ', 'WRB', 'WP', 'DT', 'VB'])

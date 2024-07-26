@@ -40,12 +40,6 @@ def mathPlugin():
           )
      return system
 
-# Function to remove pos tagged words from the question
-def remove_prepositions(prompt):
-    tokens = nltk.word_tokenize(prompt)
-    tagged_tokens = nltk.pos_tag(tokens)
-    return " ".join(token for token, pos in tagged_tokens if pos not in ['IN', 'TO', 'PRP', 'PRP$', 'VBZ', 'WRB', 'WP', 'DT', 'VB'])
-
 # Internet-search plugin
 def searchPlugin(output):
     url = "https://google.com/search?q="+output
@@ -58,3 +52,9 @@ def searchPlugin(output):
                          "html.parser")
     data = soup.get_text()
     return data
+
+# Function to remove pos tagged words from the question
+def remove_prepositions(prompt):
+    tokens = nltk.word_tokenize(prompt)
+    tagged_tokens = nltk.pos_tag(tokens)
+    return " ".join(token for token, pos in tagged_tokens if pos not in ['IN', 'TO', 'PRP', 'PRP$', 'VBZ', 'WRB', 'WP', 'DT', 'VB'])

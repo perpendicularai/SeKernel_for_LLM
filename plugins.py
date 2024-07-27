@@ -24,6 +24,14 @@ def mathPlugin():
           )
      return system
 
+def shopPlugin():
+     system = Plugin(
+          """
+          You are an intelligent AI shopping-assistant.
+          You always provide well-reasoned answers that are both correct and helpful."""
+     )
+     return system
+
 # Internet-search plugin
 
 # Module imports

@@ -4,6 +4,7 @@ This is a Python module used to create a semantic kernel in your openai api comp
 ### 🍬 Features
 - In-chat memory
 - Internet-search
+- Database querying
 
 ## ⚙️ How to:
 - Clone the repo and import the modules into your project. Ensure that it is in the project directory.

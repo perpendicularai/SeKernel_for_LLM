@@ -54,6 +54,9 @@ https://github.com/user-attachments/assets/cb48e962-2cba-4672-b4e7-c0f77455bb74
 #### Internet search with Google for the price of leggings
 https://github.com/user-attachments/assets/fdf5ac16-c8b7-4b39-b91b-d4e2d8d2d888
 
+#### Database query
+https://github.com/user-attachments/assets/ad9c87a4-475f-4ca0-a576-109709ca84b0
+
 
 
 

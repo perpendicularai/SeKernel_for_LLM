@@ -33,6 +33,7 @@ This is a Python module used to create a semantic kernel in your openai api comp
   - Getting the output
   response = db.fetchall()
 
+  - Parsing the kernel model to LlamaCpp
   LlamaCpp
   client = Llama(
         model_path=kernel.model() # Make sure to add your GGUF model in the kernel module.

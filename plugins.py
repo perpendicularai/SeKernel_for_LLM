@@ -46,7 +46,7 @@ def dbChatPlugin():
 import sqlite3
 
 def dbConn():
-     conn = sqlite3.connect("users.db")
+     conn = sqlite3.connect("<your_database.db>")
      c = conn.cursor()
      return c
 

@@ -7,12 +7,21 @@ class Model(str):
      pass
 
 # Template function that takes a string and two objects as input and returns a list
-def template(prompt:str, plugin, context):
+def shopTemplate(prompt:str, plugin, context):
      my_list = MyList
      my_list = [
           {"role": "system", "content": plugin},
           {"role": "user", "content": f'Using this data {context}, respond to this prompt {prompt}'},
           ]
+     return my_list
+
+def chatTemplate(prompt:str, plugin):
+     my_list = MyList
+     my_list = [
+          {"role": "system", "content": plugin},
+          {"role": "user", "content": f'{prompt}'},
+     ]
+
      return my_list
 
 # Model function that returns the model as a string

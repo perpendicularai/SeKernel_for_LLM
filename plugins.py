@@ -23,7 +23,7 @@ def mathPlugin():
           """
           )
      return system
-
+# Shop plugin
 def shopPlugin():
      system = Plugin(
           """
@@ -31,6 +31,24 @@ def shopPlugin():
           You always provide well-reasoned answers that are both correct and helpful."""
      )
      return system
+
+# Database chat plugin
+def dbChatPlugin():
+     system = Plugin(
+          """
+          You are an intelligent AI assistant that specializes in generating SQL queries for mysql. 
+          You always respond with well-reasoned answers that are both correct and helpful and never add `sql` at the beginning of sql statement and always ensure that it is only the statement that is returned.
+          """
+     )
+     return system
+
+# Database connector plugin
+import sqlite3
+
+def dbConn():
+     conn = sqlite3.connect("users.db")
+     c = conn.cursor()
+     return c
 
 # Internet-search plugin
 

@@ -12,10 +12,10 @@ This is a Python module used to create a semantic kernel in your openai api comp
   import plugins
 
   # Define search plugin
-  search_prompt = plugins.searchPlugin(output=question) # If context equals None, do not call the searchPlugin
+  search_prompt = plugins.searchPlugin(output=question) # If context equals None, use the Chat template. See `kernel.py` for more templates.
 
   # Initialize the kernel
-  data = kernel.template(prompt=prompt, plugins=plugins.defaultPlugin(), context=search_prompt or context=None # Where no context is provided, and so you may assume the AI assistant to not have any awareness of information of events that took place after the date until which it's training data is up until) # See plugins.py module for more plugins
+  data = kernel.shopTemplate(prompt=prompt, plugins=plugins.defaultPlugin(), context=search_prompt or context=None # Where no context is provided, and so you may assume the AI assistant to not have any awareness of information of events that took place after the date until which it's training data is up until) # See plugins.py module for more plugins
 
   # LlamaCpp
   client = Llama(

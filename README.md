@@ -8,7 +8,7 @@ This is a Python module used to create a semantic kernel in your openai api comp
 
 ## ⚙️ How to:
 - Clone the repo and import the modules into your project. Ensure that it is in the project directory.
-- ```
+- ```python
   import kernel
   import plugins
 
@@ -33,6 +33,7 @@ This is a Python module used to create a semantic kernel in your openai api comp
   - Getting the output
   response = db.fetchall()
 
+  ### LlamaCpp ###
   - Parsing the kernel model to LlamaCpp
   LlamaCpp
   client = Llama(

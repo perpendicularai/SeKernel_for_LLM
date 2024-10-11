@@ -88,4 +88,12 @@ nltk.data.path.append(str(nltk_data_dir))
 def remove_pos_tags(prompt):
     tokens = nltk.word_tokenize(prompt)
     tagged_tokens = nltk.pos_tag(tokens)
-    return " ".join(token for token, pos in tagged_tokens if pos not in ['IN', 'TO', 'PRP', 'PRP$', 'VBZ', 'WRB', 'WP', 'DT', 'VB'])
+    return " ".join(token for token, pos in tagged_tokens if pos not in ['IN', 'TO', 'PRP', 'PRP', 'VBZ', 'WRB', 'WP', 'DT', 'VB'])
+
+# Import perform_ner function
+from kernel import perform_ner
+
+# NER plugin
+def nerPlugin(prompt):
+    entities = perform_ner(prompt)
+    return Plugin(str(entities))
